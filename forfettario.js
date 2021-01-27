@@ -1,5 +1,4 @@
-// v0.3
-
+// v1.0
 function calcolaGuadagno() {
 	let letVarGuadagn = document.getElementById("guadagno-annuale").value; // Prendere valore nel campo "Guadagno annuale"
 	let coefficiente = document.getElementById("coefficiente-redditivita").value; // Prende valore nel campo "Coeffficiente di Redditività"
