@@ -3,15 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Calcolo IVA regime forfettario</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>Aprire la console per visualizzare il calcolo</h1>
-
+		<h1>Calcolo IVA regime forfettario</h1>
 		<hr />
+
+		<div class="input-box">
+			<label for="guadagno-annuale">Guadagno annuale</label>
+			<input id="guadagno-annuale" type="number" />
+		</div>
+
+		<div class="input-box">
+			<label for="coefficiente-redditivita">Coefficiente di Redittività</label>
+			<select id="coefficiente-redditivita">
+				<option value="40">40%</option>
+				<option value="54">54%</option>
+				<option value="62">62%</option>
+				<option value="67">67%</option>
+				<option value="78">78%</option>
+				<option value="86">86%</option>
+			</select>
+		</div>
+
+		<div class="input-box">
+			<label for="imposta-sostitutiva">Imposta sostitutiva</label>
+			<select id="imposta-sostitutiva">
+				<option value="5">5%</option>
+				<option value="15">15%</option>
+			</select>
+		</div>
+
+		<button type="button" onclick="calcolaGuadagno()">Calcola</button>
 
 		<p id="guadagno-annuale"></p>
 

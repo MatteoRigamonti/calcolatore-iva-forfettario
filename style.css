@@ -1,13 +1,71 @@
+:root {
+	--impColor: #3f51b5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0 auto;
 	max-width: 500px;
-	background-color: #3f51b5;
+	background-color: var(--impColor);
 	color: #fff;
 	font-family: "Open Sans", sans-serif;
+	padding: 0 12px;
+}
+
+h1 {
+	margin-bottom: 0;
 }
 
 hr {
 	border: 0.1px solid;
 	border-color: #fff;
 	opacity: 0.3;
+	margin: 20px 0;
+}
+
+.input-box {
+	margin-bottom: 20px;
+}
+
+input,
+label,
+select {
+	width: 100%;
+}
+
+input,
+select {
+	height: 50px;
+}
+
+input {
+	padding: 8px;
+	border: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/* Form Style */
+button {
+	margin-top: 15px;
+	padding: 10px;
+	background-color: #fff;
+	border: 0;
+	color: var(--impColor);
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	transition: 0.2s;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: var(--impColor);
+	color: #fff;
 }
