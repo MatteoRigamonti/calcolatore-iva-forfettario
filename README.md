@@ -1,2 +1,3 @@
-# calcolatore-iva-forfettario
-Funzione per calcolare l'IVA in regime forfettario
+# Calcolatore IVA regime forfettario
+
+Funzione per calcolare l'IVA in regime forfettario.
